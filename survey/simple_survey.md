@@ -20,14 +20,14 @@
 * 流数据处理。
 * EventSource。
 ## 与其他消息队列对比
-|redis|kafka|rabbitmq|rocketmq|activemq|disque
+&ensp;|redis|kafka|rabbitmq|rocketmq|activemq|disque
 --|:--:|:--:|:--:|:--:|:--:|:--:
-吞吐量|s|s|s|s|s|s
-消息可靠性
-消息路由
-消息优先级
-消息延迟
-消息广播
+开发语言||Scala|Erlang|Java|Java|
+吞吐量||极大（十万）|大（万级）|极大（十万）|s|
+协议||TCP, poll|AMQP, push/pull|TCP, poll|AMQP, push|
+消息优先级||不支持|支持|支持|支持|
+消息广播||不支持|支持|支持|支持|
+## 修改
 消息批处理
 消息存储
 消息追溯
