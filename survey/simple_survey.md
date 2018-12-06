@@ -23,12 +23,12 @@
 &ensp;|redis|kafka|rabbitmq|rocketmq|activemq|disque
 --|:--:|:--:|:--:|:--:|:--:|:--:
 开发语言||Scala|Erlang|Java|Java|
-吞吐量||极大（十万）|大（万级）|极大（十万）|s|
+单机吞吐量||十万级|万级|十万级|万级|
 协议||TCP, poll|AMQP, push/pull|TCP, poll|AMQP, push|
 消息优先级||不支持|支持|支持|支持|
 消息广播||不支持|支持|支持|支持|
+消息批处理||支持|不支持|支持|不支持|
 ## 修改
-消息批处理
 消息存储
 消息追溯
 消息重复
