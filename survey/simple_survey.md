@@ -23,25 +23,20 @@
 &ensp;|redis|kafka|rabbitmq|rocketmq|activemq|disque
 --|:--:|:--:|:--:|:--:|:--:|:--:
 开发语言|c|Scala|Erlang|Java|Java|c
-单机吞吐量|十万级|十万级|万级|十万级|万级|
-协议|poll|TCP, poll|AMQP, push/poll|TCP, poll|AMQP, push/poll|
-消息优先级|支持|不支持|支持|不支持|支持|
+单机吞吐量||十万级|万级|十万级|万级|
+协议||TCP, poll|AMQP, push/poll|TCP, poll|AMQP, push/poll|
+消息优先级||不支持|支持|不支持|支持|
 消息广播||不支持|支持|支持|支持|
-消息批处理|不支持|支持|不支持|支持|不支持|
-延迟消息|支持|不支持|支持|支持|支持|
-消息堆积|支持（有上限，可能丢失）|支持|支持（超过阈值影响性能）|支持|支持（有上限）|
-消息追溯|支持|支持（仅offset）|支持|支持（offset、timestamp）|支持|
-## 修改
-消息重复
-消息模式
-消息确认
-负载均衡
-集群方式
-可用性
-运维管理
-
-
+消息批处理||支持|不支持|支持|不支持|
+延迟消息||不支持|支持|支持|支持|
+消息堆积||支持|支持（超过阈值影响性能）|支持|支持（有上限）|
+消息追溯||支持（仅offset）|支持|支持（offset、timestamp）|支持|
+消息事务||支持|支持|支持|支持|
+负载均衡||支持（zookeeper）|支持|支持(master-slave)|支持(zookeeper)|
+集群方式||leader-slave|mirror|master-slave|master-slave|
+运维管理||kafka-manager|rabbitmq-management|||
 ## 实现原理简介
+
 ## 游戏中可能的应用
 * 邮件系统
 * 聊天系统
