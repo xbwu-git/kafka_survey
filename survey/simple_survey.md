@@ -22,15 +22,15 @@
 ## 与其他消息队列对比
 &ensp;|redis|kafka|rabbitmq|rocketmq|activemq|disque
 --|:--:|:--:|:--:|:--:|:--:|:--:
-开发语言||Scala|Erlang|Java|Java|
-单机吞吐量||十万级|万级|十万级|万级|
-协议||TCP, poll|AMQP, push/pull|TCP, poll|AMQP, push|
-消息优先级||不支持|支持|支持|支持|
+开发语言|c|Scala|Erlang|Java|Java|c
+单机吞吐量|十万级|十万级|万级|十万级|万级|
+协议|poll|TCP, poll|AMQP, push/poll|TCP, poll|AMQP, push/poll|
+消息优先级|支持|不支持|支持|不支持|支持|
 消息广播||不支持|支持|支持|支持|
-消息批处理||支持|不支持|支持|不支持|
-延迟消息||不支持|支持|支持|支持|
-消息堆积||支持|支持（超过阈值影响性能）|支持|支持（有上限）|
-消息追溯||支持（仅offset）|支持|支持（offset、timestamp）|支持|
+消息批处理|不支持|支持|不支持|支持|不支持|
+延迟消息|支持|不支持|支持|支持|支持|
+消息堆积|支持（有上限，可能丢失）|支持|支持（超过阈值影响性能）|支持|支持（有上限）|
+消息追溯|支持|支持（仅offset）|支持|支持（offset、timestamp）|支持|
 ## 修改
 消息重复
 消息模式
