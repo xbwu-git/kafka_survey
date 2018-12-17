@@ -73,8 +73,9 @@
 * 日志系统
 ## 部署与运维
 ## 参考资料
-http://www.thinkyixia.com/2017/10/25/kafka-2/
-https://kafka.apache.org/documentation
-https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster
-https://cwiki.apache.org/confluence/display/KAFKA/FAQ#FAQ-HowmanytopicscanIhave?
-https://medium.com/@Alibaba_Cloud/kafka-vs-rocketmq-multiple-topic-stress-test-results-d27b8cbb360f
+* http://www.thinkyixia.com/2017/10/25/kafka-2/
+* https://kafka.apache.org/documentation
+* kafka权威指南
+* https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster
+* https://cwiki.apache.org/confluence/display/KAFKA/FAQ#FAQ-HowmanytopicscanIhave?
+* https://medium.com/@Alibaba_Cloud/kafka-vs-rocketmq-multiple-topic-stress-test-results-d27b8cbb360f
